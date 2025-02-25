@@ -1,3 +1,4 @@
+/* Resetting defaults */
 * {
     margin: 0;
     padding: 0;
@@ -5,48 +6,57 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Base style for the body and HTML */
 body, html {
     height: 100%;
-    background-color: #282c34;
+    background-color: #d1d3d4; /* Soft gray background */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
+    font-family: 'Roboto', sans-serif; /* Elegant font */
 }
 
+/* Content container */
 .content {
     text-align: center;
     z-index: 2;
 }
 
+/* Title styling */
 .title {
     font-size: 3em;
-    font-family: 'Arial', sans-serif;
-    color: #fff;
+    color: #333; /* Dark gray for the title */
     margin-bottom: 30px;
+    font-family: 'Helvetica Neue', sans-serif; /* Elegant clean font */
 }
 
+/* Button container */
 .buttons {
     display: flex;
     gap: 20px;
     justify-content: center;
 }
 
+/* Button styling */
 .button {
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color: #f1f1f1; /* Light gray background */
+    color: #333; /* Dark gray text */
+    padding: 12px 24px;
+    border-radius: 8px;
     font-size: 1.2em;
-    transition: background-color 0.3s;
+    font-family: 'Arial', sans-serif; /* Elegant button font */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+    transform: scale(1.05); /* Slight scale-up effect */
 }
 
+/* Snow effect */
 .snow {
     position: absolute;
     top: 0;
@@ -57,6 +67,7 @@ body, html {
     z-index: 1;
 }
 
+/* Snowfall animation */
 .snow::before {
     content: "";
     position: absolute;
@@ -68,6 +79,7 @@ body, html {
     animation: snow 10s linear infinite;
 }
 
+/* Snowfall animation */
 @keyframes snow {
     0% {
         transform: translateY(0);
